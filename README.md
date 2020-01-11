@@ -29,6 +29,7 @@ I'm getting the distance from my home for each land property using the Google Ma
 
 I'm adding meteorological and geological data because it is important for my purpose.
 
+Plant Hardiness.
 
 ## Data Cleanup
 
