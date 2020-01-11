@@ -4,7 +4,7 @@
 # Land_Robot
 Data Analysis for Land Purchase
 
-I want to buy land in the boreal forest. So I made a scraper to get me the data, then a data cleaner. Then I do some data analysis on the properties with statistics, business analytics and machine learning. 
+I want to buy land in the boreal forest. So I made a scraper to get me the data, then a data cleaner. Then I do some data analysis on the properties with using business analytics and machine learning. 
 
 ## Web scraper 'List' and 'Detail'
 
