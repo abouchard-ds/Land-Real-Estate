@@ -21,7 +21,7 @@ I started with my usual `bs4`, but could not get the page to switch because ther
 4. Do this for all the pages
 5. Write the data to disk (Excel)
 
-*Got the data from 453 pages453 pages to analyze 9061 properties.*
+*Got the data from 453 pages to analyze 9061 properties.*
 
 ## Further data augmentation
 
