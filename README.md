@@ -1,9 +1,11 @@
 # Land_Robot
-Data Analysis for Land Purchase
+Data Pipeline for Land Purchase proof of concept.
 
 ![Boreal Forest](/media/myboreal.jpg)
 
-I want to buy land in the boreal forest. So I made a scraper to get the data, then a data cleaner. Then I do some data analysis on the properties using business analytics and machine learning. 
+I want to buy land in the boreal forest. I can't find the information I need from one website. And I want to find anomalies in the market to benefit from.
+
+So I made a scraper to get the data. Then I do some cleanup and data analysis on the properties using business analytics and machine learning.
 
 ## Web scraper 'List' and 'Detail'
 
