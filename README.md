@@ -3,11 +3,11 @@ Data Analysis for Land Purchase
 
 ![Boreal Forest](/media/myboreal.jpg)
 
-I want to buy land in the boreal forest. So I made a scraper to get me the data, then a data cleaner. Then I do some data analysis on the properties with using business analytics and machine learning. 
+I want to buy land in the boreal forest. So I made a scraper to get the data, then a data cleaner. Then I do some data analysis on the properties using business analytics and machine learning. 
 
 ## Web scraper 'List' and 'Detail'
 
-The web scraping is done in 2 parts.
+The web scraping is done in multiple parts.
 
 First I get the listing of all land for sale which provide me with basic info (area,price,town) AND the links for each listing. Then I scrape each individual listing to get the detailed information.
 
@@ -20,6 +20,7 @@ I started with my usual `bs4`, but could not get the page to switch because ther
 3. Get the data and the link for the 20 properties on the page
 4. Do this for all the pages
 5. Write the data to disk (Excel)
+6. Add other sources
 
 *Got the data from 453 pages to analyze 9061 properties.*
 
@@ -33,13 +34,23 @@ Plant Hardiness.
 
 Cartographie hydrogeologique.
 
+
+
 ## Data Cleanup
 
-Nothing special.
+Nothing special. Extracting postal  code for use with googlemap api. 
 
 
 ## Analysis
 
+Factors most contributing to the price.
+
+Heatmap of price per square foot.
+
+Listing land that are under 2h from home, with low prices.
+
+Checking land with aberrant prices. If i missed something find other similar that are not expensive.
 
 # ML
 
+Regression pour savoir le prix que devrais etre un terrain.
