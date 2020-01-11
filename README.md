@@ -1,8 +1,7 @@
-
-![Boreal Forest](https://assets.nrdc.org/sites/default/files/styles/full_content--retina/public/media-uploads/borealclearcuttingreport_639301519_1200x630.jpg?itok=RCO65FOJ)
-
 # Land_Robot
 Data Analysis for Land Purchase
+
+![Boreal Forest](/media/myboreal.jpg)
 
 I want to buy land in the boreal forest. So I made a scraper to get me the data, then a data cleaner. Then I do some data analysis on the properties with using business analytics and machine learning. 
 
