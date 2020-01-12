@@ -32,7 +32,13 @@ I'm getting the distance from my home for each land property using the Google Ma
 
 I'm adding meteorological and geological data because it is important for my purpose.
 
-Plant Hardiness.
+Add gmap distance matrix from home.
+
+Add gmap geoloc data.
+
+Plant Hardiness zone.
+
+2016 census data.
 
 Cartographie hydrogeologique.
 
