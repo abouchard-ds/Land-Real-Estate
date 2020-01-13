@@ -1,11 +1,22 @@
-# Land_Robot
-Data Pipeline for Land Purchase proof of concept.
+# Land Real Estate Program
+Proof of concept.
 
 ![Boreal Forest](/media/myboreal.jpg)
 
-I want to buy land in the boreal forest. I can't find the information I need from one website. And I want to find anomalies in the market to benefit from.
+I want to buy land in the boreal forest. No website offer me the information I want.
 
-So I made a scraper to get the data. Then I do some cleanup and data analysis on the properties using business analytics and machine learning.
+- I want good current data on the market to make informed decisions;
+- I want to be able to compare listings side by side;
+- I want to query the data, I dont want to endlessly check on very basic webpages;
+- I want to find anomalies in the market to benefit from;
+- I want to know which properties are in a positive cashflow where applicable;
+- I want to study which factors are i fluencing the price;
+- I want to know which proportion on listings say they are "rare" opportunities;
+- I want to know what is the average price per square foot on a given region;
+
+The website I've checked has nothing of the sort. It's like it was developped by a children: extremely basic, nothing really usefull.
+
+So I made a scraper to get the data. And then I augment it with other data sources.
 
 ## Web scraper 'List' and 'Detail'
 
