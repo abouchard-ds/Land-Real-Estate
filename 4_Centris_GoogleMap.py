@@ -17,7 +17,7 @@ df = pd.read_excel("data\\6_Centris_Gmap.xlsx")
 API_key = "yourkey"
 gmaps = googlemaps.Client(key=API_key)
 
-home = "Montreal, QC H1Y 2X7"
+home = "Montreal, QC H0H 0H0"
 
 # CONTROL SWITCH (dont wan't to pay for API)
 # Can skip one or the other API call
