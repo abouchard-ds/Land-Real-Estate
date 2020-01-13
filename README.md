@@ -1,9 +1,9 @@
 # Land Real Estate Program
-Proof of concept.
+Proof of concept, base code: data pipeline, cleanup, exploration, analysis.
 
 ![Boreal Forest](/media/myboreal.jpg)
 
-I want to buy land in the boreal forest. No website offer me the information I want.
+I want to buy land in the boreal forest but no website can answer my questions:
 
 - I want good current data on the market to make informed decisions;
 - I want to be able to compare listings side by side;
@@ -15,9 +15,7 @@ I want to buy land in the boreal forest. No website offer me the information I w
 - I want to know what is the average price per square foot on a given region;
 - I want to know what is the impact of dis5ance from greater montreal on the pruce
 
-The website I've checked has nothing of the sort. It's like it was developped by a children: extremely basic, nothing really usefull.
-
-So I made a scraper to get the data. And then I augment it with other data sources.
+The website I've checked has nothing of the sort. So I made a scraper to get the data. And then I augmented it with other data sources.
 
 ## Web scraper 'List' and 'Detail'
 
@@ -25,7 +23,7 @@ The web scraping is done in multiple parts.
 
 First I get the listing of all land for sale which provide me with basic info (area,price,town) AND the links for each listing. Then I scrape each individual listing to get the detailed information.
 
-I started with my usual `bs4`, but could not get the page to switch because there are no page numbers in the URL of the website. So I had to learn `Selenium` from scratch. First I wanted to use `Selenium` only for page switching thus reusing what I already developed but the `driver.page_source` method seems to truncate the page and I consistently got only 12 results instead of the 20 per pages I was suposed to get.
+I started with `bs4`, but could not get the page to switch because there are no page numbers in the URL of the website. I learned `Selenium` from scratch. First I wanted to use `Selenium` only for page switching thus reusing what I already developed but the `driver.page_source` method seems to truncate the page and I consistently got only 12 results instead of the 20 per pages I was suposed to get.
 
 ### Methodology
 
@@ -40,36 +38,39 @@ I started with my usual `bs4`, but could not get the page to switch because ther
 
 ## Further data augmentation
 
-I'm getting the distance from my home for each land property using the Google Map API since I'm only interested in land not further than 2 driving hours. 
+Some data used to augment the original data from Centris:
 
-I'm adding meteorological and geological data because it is important for my purpose.
+| Data Source | Description | How to get | Purpose |
+| ----------- | ----------- | ---------- | ------- |
+| Centris Listing | List of land properties for sale | Webscraping Centris.ca | Get the link to obtain details |
+| Centris Details | Details about each properies | Webscraping Centris.ca | Main data, target of the operation |
+| Google Map Distance Matrix API | Query Gmap to get the distance/time to reach the destination. | Google Map API | Multiple |
+| Google Map Geolocalisation API | Query Gmap to get the coordinate and other data about location. | Google Map API | Multiple |
+| Canada Plant Hardiness Zone    | Describe zones where specific plants are likely to live | Government | Homesteading, Permaculture |
+| 2016 Census Canada| Information about demographics per region/city | Government | Economic analysis |
+| Cartographie hydrogéologique QC | Information about subteranean water source | Government | Building well, economic |
+| Meteo | Average temp. per month | Unknown yet | Comparison |
+| Geological data | Soil composition | Unknown yet | Agriculture, architecture, mining |
 
-Add gmap distance matrix from home.
-
-Add gmap geoloc data.
-
-Plant Hardiness zone.
-
-2016 census data.
-
-Cartographie hydrogeologique.
-
-
+- Need to extract data from Centris to create a string that will be used to query Gmaps API. Such as: "City, Prov H0H 0H0"
+- From there, Gmap will provide coordinates which can be used to link data with other sources.
+- Keys can be: postal code, adress, city (census), coordinate (hardiness, cartography), centris unique number
 
 ## Data Cleanup
 
-Nothing special. Extracting postal  code for use with googlemap api. 
+
 
 
 ## Analysis
 
-Factors most contributing to the price.
-
-Heatmap of price per square foot.
-
-Listing land that are under 2h from home, with low prices.
-
-Checking land with aberrant prices. If i missed something find other similar that are not expensive.
+- Factors most contributing to the price;
+- What's the impact of distance from Montreal on the price (hypothesis: farther = cheaper);
+- Heatmap of avg. price per square/foot;
+- Listing land that are under 2h from home, with low prices (<= 2$ sq/ft);
+- Analysis of prices per region;
+- Which region have more/less land for sale;
+- Clustering of price with analysis;
+- Regression on the price;
 
 # ML
 
