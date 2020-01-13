@@ -13,6 +13,7 @@ I want to buy land in the boreal forest. No website offer me the information I w
 - I want to study which factors are i fluencing the price;
 - I want to know which proportion on listings say they are "rare" opportunities;
 - I want to know what is the average price per square foot on a given region;
+- I want to know what is the impact of dis5ance from greater montreal on the pruce
 
 The website I've checked has nothing of the sort. It's like it was developped by a children: extremely basic, nothing really usefull.
 
