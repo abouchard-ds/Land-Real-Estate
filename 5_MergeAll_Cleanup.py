@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jan 12 17:34:07 2020
 
-@author: captn
 """
 import pandas as pd
 
