@@ -1,8 +1,6 @@
-excel# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
-Created on Sat Jan 11 10:48:04 2020
 
-@author: captn
 """
 
 import pandas as pd
