@@ -56,6 +56,10 @@ Some data used to augment the original data from Centris:
 - From there, Gmap will provide coordinates which can be used to link data with other sources.
 - Keys can be: postal code, adress, city (census), coordinate (hardiness, cartography), centris unique number
 
+## Plant hardiness zones
+
+![ph](Hardiness.PNG)
+
 ## Data Cleanup
 
 
