@@ -38,8 +38,9 @@ I started with `bs4`, but could not get the page to switch because there are no 
 
 *Got the data from 453 pages to analyze 9061 properties.*
 
-## Further data augmentation
+# Data augmentations
 
+## Centris Listing + Details
 Some data used to augment the original data from Centris:
 
 | Data Source | Description | How to get | Purpose |
@@ -58,6 +59,10 @@ Some data used to augment the original data from Centris:
 - From there, Gmap will provide coordinates which can be used to link data with other sources.
 - Keys can be: postal code, adress, city (census), coordinate (hardiness, cartography), centris unique number
 
+## Google map 'Distance Matrix API'
+
+## Google map 'Geolocalization API'
+
 ## Plant hardiness zones
 
 ![ph](Hardiness.PNG)
@@ -66,12 +71,14 @@ Some data used to augment the original data from Centris:
 
 
 
-## Data Cleanup
+# Data Cleanup
 
 
 
 
-## Analysis
+# Analysis
+
+Un debut d'analyse ici: [CLICK](https://github.com/abouchard-ds/Land-Real-Estate/blob/master/Data_Analysis.ipynb).
 
 - Factors most contributing to the price;
 - What's the impact of distance from Montreal on the price (hypothesis: farther = cheaper);
@@ -81,6 +88,7 @@ Some data used to augment the original data from Centris:
 - Which region have more/less land for sale;
 - Clustering of price with analysis;
 - Regression on the price;
+
 
 # ML
 
