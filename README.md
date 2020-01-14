@@ -14,6 +14,8 @@ I want to buy land in the boreal forest but no website can answer my questions:
 - I want to know which proportion on listings say they are "rare" opportunities;
 - I want to know what is the average price per square foot on a given region;
 - I want to know what is the impact of dis5ance from greater montreal on the pruce
+- Trouver des proprietes qui seraient sous-evaluees;
+- Sur une propriete evaluer sont prix 'fair' selon mes caracteristiques;
 
 The website I've checked has nothing of the sort. So I made a scraper to get the data. And then I augmented it with other data sources.
 
