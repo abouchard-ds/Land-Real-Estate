@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jan 11 01:59:36 2020
 
-@author: captn
 """
 
 import pandas as pd
@@ -41,8 +39,8 @@ df_resume = df[ df.index >8673 ]
 #    writer = csv.writer(f)
 for l in df_resume['link']:
     
-    # FAIRE UNE LOOP POUR REFRESH LE BROWSER APRES 200 QUERY
-    # memory montait a 80% apres 200 et rebaisse a 35% apres reboot
+    # FAIRE UNE LOOP POUR REFRESH LE BROWSER APRES 125 QUERY
+    # memory montait a 80% apres 125 et rebaisse a 35% apres reboot
     if (refresh_count == 125):
         print("+++++++++++++++++++++++++++++++++++++++++++++++++")
         print("---                 REBOOT                    ---")
@@ -89,7 +87,7 @@ for l in df_resume['link']:
         browser.quit()
         break
 
-# CLOSE BROWSER (va faire une erreur si le nombre d'url est divisible exactement par 200)
+# CLOSE BROWSER (va faire une erreur si le nombre d'url est divisible exactement par 125)
 browser.quit()
 
 # transform la list de list en df
