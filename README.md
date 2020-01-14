@@ -62,6 +62,10 @@ Some data used to augment the original data from Centris:
 
 ![ph](Hardiness.PNG)
 
+![legend](Hardiness_legend.PNG)
+
+
+
 ## Data Cleanup
 
 
