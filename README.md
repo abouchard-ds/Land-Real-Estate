@@ -7,10 +7,9 @@ I want to buy land in the boreal forest but no website can answer my questions:
 
 - I want good current data on the market to make informed decisions;
 - I want to be able to compare listings side by side;
-- I want to query the data, I dont want to endlessly check on very basic webpages;
 - I want to find anomalies in the market to benefit from;
 - I want to know which properties are in a positive cashflow where applicable;
-- I want to study which factors are i fluencing the price;
+- I want to study which factors are influencing the price;
 - I want to know which proportion on listings say they are "rare" opportunities;
 - I want to know what is the average price per square foot on a given region;
 - I want to know what is the impact of dis5ance from greater montreal on the pruce
